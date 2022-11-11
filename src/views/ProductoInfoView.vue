@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex flex-column align-items-center">
-        <div class="mt-5 d-flex gap-5 justify-content-center p-3 w-50 bg-success bg-opacity-10 rounded shadow-sm">
+        <div class="mt-5 d-flex gap-5 justify-content-center p-3 w-50">
             <img :src="productoInfo.images[0]" class="img-info rounded">
             <div class="d-flex flex-column">
                 <h1>{{ productoInfo.name }}</h1>
@@ -62,11 +62,11 @@ export default {
             }),
             {
                 headers: {
-                    apikey: "549a1f20-84aa-41a5-ad24-13ac557617e6",
+                    apikey: "549a1f20-84aa-41a5-ad24-13ac557617e67",
                     "Content-Type": "application/json"
                 }
             })
-            .then(window.location.reload)
+            .then(window.location.reload())
             .catch( err => {
                 console.log(err)
             })
